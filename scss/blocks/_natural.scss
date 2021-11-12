@@ -1,0 +1,15 @@
+.natural__list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 30px 70px;
+  
+ }
+ .natural__img{
+  opacity: 0.6;
+  &:hover{
+   opacity: 1;
+  }
+ }
+ 

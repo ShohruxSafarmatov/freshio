@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson</title>
+    
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <div>
+        <header class="about__header">
+            <div class="header__top-container container" style="padding: 0;">                
+                
+                <div class="about__header-site container col-xxl-12 col-xs-12 col-lg-12 col-md-12 col-sm-12 p-0" style="
+                align-items: center;
+                ">
+                <div class="mobile__menu">
+                    <button><i class="bi bi-list"></i></button>
+                </div>
+                <div class="about__site-logo col-lg-2 col-md-2">
+                    <a href="index.html"><img src="img/freshio-logo-1603358296.jpg" alt=""></a>
+                </div>
+                <div class="header__forms col-lg-6 col-md-6">
+                    <form class="header__form col-lg-10 col-md-8" action="https://echo.htmlacademy.ru/" style="
+                    margin: 0 auto;
+                    ">
+                    <i class="bi bi-search"></i>
+                    <input class="header__input col-xxl-6 col-lg-8 col-md-12" type="search" id="search" name="search" placeholder="Enter Keyword...">
+                    <button class="header__search" type="submit" id="search" name="search">Search</button>
+                </form>
+            </div>
+            
+            <div class="header__icons-item none">
+                <a class="header__icons-link" href="#"><i class="bi bi-basket"></i> <span>0</span></a>
+            </div>
+            <div class="col-xxl-4 about__link-us" style="
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            ">
+            <div class="col-lg-7">
+                <i class="fal fa-headphones-alt"></i>
+                <div>
+                    <p class="header__callinfo-us">CALL US 24/7</p>
+                    <a class="header__callinfo-tel" href="tel:+998977590506">+998 97 759 05 06</a>
+                </div>
+                
+            </div>
+            <ul class="header__icons-list col-lg-10 col-md-12">
+                <li class="header__icons-item col-md-4"><button class=" blue" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-person"></i></button>
+                    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <img src="img/freshio-logo-1603358296.jpg" alt="logo">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <h2 class="offcanvas__title">Existing Account Login</h2>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" class="form-control key__input" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Forgot password ?
+                                                </button>
+                                            </h2>
+                                            <button type="submit" class="btn login__btn">Login</button><br>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong class="strong__text">Reset Password</strong>
+                                                    <div class="form-floating mb-3">
+                                                        <div class="mb-3">
+                                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+                                                        </div>
+                                                        <button type="submit" class="btn login__btn">Reset Passwords</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h2 class="offcanvas__title">Connect with Social Networks</h2>
+                                            <ul class="social__login-list">
+                                                <li class="social__login-item"><a class="social__login-link" href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a></li>
+                                                <li class="social__login-item"><a class="social__login-link" href="https://www.google.ru/"><i class="bx bxl-google"></i></a></li>
+                                                <li class="social__login-item"><a class="social__login-link" href="https://www.twitter.com/"><i class="bx bxl-twitter"></i></a></li>
+                                            </ul>
+                                            <h2 class="offcanvas__title">New Account Register
+                                            </h2>
+                                            
+                                            <div class="row">
+                                                <div class="col-xxl-12">
+                                                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                                </div>
+                                                <div class="col-xxl-12">
+                                                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                                </div>
+                                                <div class="col-xxl-12">
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+                                                </div>
+                                                <div class="col-xxl-12">
+                                                    <input type="password" class="form-control key__input" id="exampleInputPassword1" placeholder="Password">
+                                                </div>
+                                                <div class="mt-3 forms-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">I agree to the terms.</label>
+                                                    <button type="submit" class="btn login__btn col-xxl-12">Create an Account</button>
+                                                </div>
+                                            </div>
+                                            <div class="popup-content d-flex align-items-center justify-content-between">
+                                                <div class="language">
+                                                    <span class="language__title">Language:</span>
+                                                    <ul class="language__list">
+                                                        <li class="language__item">
+                                                            <a class="language__link" href="#"><img src="img/1.jpg" alt="img"></a>
+                                                        </li>
+                                                        
+                                                        <li class="language__item">
+                                                            <a class="language__link" href="#"><img src="img/2.jpg" alt="img"></a>
+                                                        </li>
+                                                        
+                                                        <li class="language__item">
+                                                            <a class="language__link" href="#"><img src="img/3.jpg" alt="img"></a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="language__list">
+                                                        <li class="language__item">
+                                                            <a class="language__link" href="#"><img src="img/4.jpg" alt="img"></a>
+                                                        </li>
+                                                        
+                                                        <li class="language__item">
+                                                            <a class="language__link" href="#"><img src="img/5.jpg" alt="img"></a>
+                                                        </li>
+                                                        
+                                                        <li class="language__item">
+                                                            <a class="language__link" href="#"><img src="img/6.jpg" alt="img"></a>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="language__title">Currency:</span>
+                                                    <ul class="currency__list">
+                                                        <li class="currency__item"><a class="currency__link" href="#">EUR</a></li>
+                                                        <li class="currency__item"><a class="currency__link--active" href="#">USD</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="user__info">
+                                                    <ul class="user__info-list">
+                                                        <li class="user__info-item"><a class="user__info-link" href="#"><i class="fas fa-sign-in"></i> Sign in</a></li>
+                                                        <li class="user__info-item"><a class="user__info-link" href="#"><i class="far fa-user"></i>My account</a></li>
+                                                        <li class="user__info-item"><a class="user__info-link" href="#"><i class="bi bi-heart"></i>Wishlist 0</a></li>
+                                                        <li class="user__info-item"><a class="user__info-link" href="#"><i class="fal fa-clone"></i>Compare 0</a></li>
+                                                        <li class="user__info-item"><a class="user__info-link" href="#"><i class="bi bi-check2-square"></i> Checkout</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div></li>
+                    <li class="header__icons-item col-md-4"><a class="header__icons-link" href="#"><i class="bi bi-heart"></i><span>0</span></a></li>
+                    <li class="header__icons-item col-md-4"><a class="header__icons-link" href="#"><i class="bi bi-basket"></i> <span>0</span></a></li>
+                </ul>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="about__nav">
+        <div class="container">
+            <div class="nav__flex d-flex align-items-center">
+                <div class="nav__menu-about">
+                    <i class="bi bi-list"></i>
+                    <span class="nav__menu-span">Shop by Department</span>
+                    <ul class="nav__menu-list">
+                        <li class="nav__menu-item">
+                            <a class="nav__menu-link" href="#">
+                                <i class="fal fa-salad"></i>
+                                Fruits &amp; Vegetables
+                            </a>
+                        </li>
+                        <li class="nav__menu-item--drop">
+                            <a class="nav__menu-link" href="#">
+                                <i class="fal fa-meat"></i>
+                                Supplyments
+                                <i class="bx bxs-chevron-right right__won"></i>
+                            </a><ul class="inner__list"><a class="nav__menu-link" href="#">
+                            </a><li class="inner__item"><a class="nav__menu-link" href="#"></a><a class="inner__link" href="#">Vegetables</a></li>
+                            <li class="inner__item"><a class="inner__link" href="#">Fresh Meat</a></li>
+                            <li class="inner__item"><a class="inner__link" href="#">Fruit &amp; Nut Gifts</a></li>
+                            <li class="inner__item"><a class="inner__link" href="#">Fresh Berries</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li class="nav__menu-item--drop">
+                        <a class="nav__menu-link" href="#">
+                            <i class="fal fa-egg-fried"></i>
+                            Dairy Bread &amp; Eggs
+                            <i class="bx bxs-chevron-right right__two"></i>
+                        </a><ul class="inner__list"><a class="nav__menu-link" href="#">
+                        </a><li class="inner__item"><a class="nav__menu-link" href="#"></a><a class="inner__link" href="#">Vegetables</a></li>
+                        <li class="inner__item"><a class="inner__link" href="#">Fresh Meat</a></li>
+                        <li class="inner__item"><a class="inner__link" href="#">Fruit &amp; Nut Gifts</a></li>
+                        <li class="inner__item"><a class="inner__link" href="#">Fresh Berries</a></li>
+                    </ul>
+                    
+                    
+                </li>
+                <li class="nav__menu-item">
+                    <a class="nav__menu-link" href="#">
+                        <i class="fal fa-pizza-slice"></i>
+                        Package Foods</a>
+                    </li>
+                    <li class="nav__menu-item--drop">
+                        <a class="nav__menu-link" href="#">
+                            <i class="fal fa-apple-alt"></i>B
+                            eauty &amp; Care
+                            <i class="bx bxs-chevron-right right__tree"></i>
+                        </a><ul class="inner__list"><a class="nav__menu-link" href="#">
+                        </a><li class="inner__item"><a class="nav__menu-link" href="#"></a><a class="inner__link" href="#">Vegetables</a></li>
+                        <li class="inner__item"><a class="inner__link" href="#">Fresh Meat</a></li>
+                        <li class="inner__item"><a class="inner__link" href="#">Fruit &amp; Nut Gifts</a></li>
+                        <li class="inner__item"><a class="inner__link" href="#">Fresh Berries</a></li>
+                    </ul>
+                    
+                </li>
+                <li class="nav__menu-item">
+                    <a class="nav__menu-link" href="#">
+                        <i class="fal fa-volleyball-ball"></i>
+                        Health &amp; Wellness
+                    </a>
+                </li>
+                <li class="nav__menu-item">
+                    <a class="nav__menu-link" href="#">
+                        <i class="fal fa-ice-cream"></i>
+                        Baby &amp; Infants
+                    </a>
+                </li>
+                <li class="nav__menu-item">
+                    <a class="nav__menu-link" href="#">
+                        <i class="fal fa-leaf"></i>Home Care
+                    </a>
+                </li>
+                <li class="nav__menu-item">
+                    <a class="nav__menu-link" href="#">
+                        <i class="fal fa-badge-percent"></i>
+                        Hot Offers</a>
+                    </li>
+                </ul>
+            </div>
+            <nav>
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">Home<i class="bx bxs-chevron-down"></i>
+                        </a>
+                        <div class="home__drop">
+                            <ul class="home__drop-list">
+                                <li class="home__drop-item">
+                                    <strong class="home__drop-strong">Category 1</strong>
+                                </li>
+                                <li class="home__drop-item">
+                                    <a class="home__drop-link" href="#">Vegatable</a>
+                                </li>
+                                <li class="home__drop-item">
+                                    <a class="home__drop-link" href="#">Tomato</a>
+                                </li>
+                                <li class="home__drop-item">
+                                    <a class="home__drop-link" href="#">Cabbage</a>
+                                </li>
+                                <li class="home__drop-item">
+                                    <a class="home__drop-link" href="#">Juice</a>
+                                </li>
+                                <li class="home__drop-item">
+                                    <a class="home__drop-link" href="#">Meat</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">Shop<i class="bx bxs-chevron-down"></i></a>
+                        <div class="shop__drop">
+                            <ul class="shop__drop-list">
+                                <li class="shop__drop-item">
+                                    <strong class="shop__drop-strong">Category 1</strong>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Vegatable</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Tomato</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Cabbage</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Juice</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Meat</a>
+                                </li>
+                            </ul>
+                            <ul class="shop__drop-list">
+                                <li class="shop__drop-item">
+                                    <strong class="shop__drop-strong">Category 2</strong>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Beef</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Pork</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Coconut</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Broccoli</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Fish</a>
+                                </li>
+                            </ul>
+                            <ul class="shop__drop-list">
+                                <li class="shop__drop-item">
+                                    <strong class="shop__drop-strong">Category 3</strong>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Seafood</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Octopus</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Fish</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Pork</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">More</a>
+                                </li>
+                            </ul>
+                            <ul class="shop__drop-list">
+                                <li class="shop__drop-item">
+                                    <strong class="shop__drop-strong">Category 4</strong>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Vegetables</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Fresh Meat</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Fruit &amp; Nut Gifts</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Fresh Berries</a>
+                                </li>
+                                <li class="shop__drop-item">
+                                    <a class="shop__drop-link" href="#">Fat Freezing</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">Pages<i class="bx bxs-chevron-down"></i></a>
+                        <div class="pages__drop">
+                            <ul class="pages__drop-list">
+                                <li class="pages__drop-item"><a class="pages__drop-link" href="#"><img class="pages__drop-img" src="img/98b4b05fef8913b2a37cbb592b921e7b.jpg" alt=""></a></li>
+                                <li class="pages__drop-item"><a class="pages__drop-link" href="#"><img class="pages__drop-img" src="img/98b4b05fef8913b2a37cbb592b921e7b.jpg" alt=""></a></li>
+                                <li class="pages__drop-item"><a class="pages__drop-link" href="#"><img class="pages__drop-img" src="img/98b4b05fef8913b2a37cbb592b921e7b.jpg" alt=""></a></li>
+                                <li class="pages__drop-item"><a class="pages__drop-link" href="#"><img class="pages__drop-img" src="img/98b4b05fef8913b2a37cbb592b921e7b.jpg" alt=""></a></li>
+                                <li class="pages__drop-item"><a class="pages__drop-link" href="#"><img class="pages__drop-img" src="img/38991a8c1582669d29abe889bc0d5f52.jpg" alt=""></a></li>
+                                <li class="pages__drop-item"><a class="pages__drop-link" href="#"><img class="pages__drop-img" src="img/98b4b05fef8913b2a37cbb592b921e7b.jpg" alt=""></a></li>
+                                <li class="pages__drop-item"><a class="pages__drop-link" href="#"><img class="pages__drop-img" src="img/98b4b05fef8913b2a37cbb592b921e7b.jpg" alt=""></a></li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">Blog</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>              
+    </div>
+</div>
+</header>
+
+<main>
+    <section id="about__breadcrumb">
+        <div class="about__container container">
+            <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Home<i class="fal fa-chevron-right"></i></a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">FAQs</a></li></ul>
+            </div>
+        </section>
+        <section id="about__hero">
+            <div class="about__container container">
+                <h2 class="about__hero-title">FAQs</h2>
+            </div>
+        </section>
+        <section>
+            <div>
+                
+            </div>
+        </section>
+        <div class="our__call-email">
+            <div class="col-xxl-3 d-flex align-items-center justify-content-between">
+                <div class="col- d-flex align-items-center justify-content-between">
+                    <i class="fal fa-headphones-alt"></i>
+                    <div>
+                        <p class="header__callinfo-us">CALL US 24/7</p>
+                        <a class="header__callinfo-tel" href="tel:+998977590506">+998 97 759 05 06</a>
+                    </div>
+                    
+                </div> 
+                <div class="col-xxl-4 d-flex align-items-center justify-content-between">
+                    <i class="fal fa-envelope-open-text"></i>
+                    <div>
+                        <p class="header__callinfo-us">EMAIL US</p>
+                        <a class="header__callinfo-tel" href="#">demo@demo.com</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <a href="#"><img src="img/freshio_payment_image.png" alt="img"></a>
+        </div>  
+    </main>
+    <footer class="footer__bg">
+        <div class="footer__container container"> 
+            <div>
+                <div class="footer__body">
+                    <div class="footer__payment">
+                        <img class="footer__pay mt-5" src="img/freshio-logo-1603358296.jpg" alt="img">
+                    </div>
+                    <div class="footer__content">
+                        <h2 class="footer__title--active">STORE LOCATION</h2>
+                        <p class="footer__text mb-2">9066 Green Lake Drive Chevy
+                            Chase, MD 20815</p>
+                            <p class="footer__weekdays">Monday - Saturday:</p>
+                            <p class="footer__data mb-2">8:00 am - 4:00pm</p>
+                            <p class="footer__weekdays">Sunday:</p>
+                            <p class="footer__data">9:00 am - 5:00pm</p>
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__title--active">INFORMATION</li>
+                            <li class="footer__item"><a class="footer__link" href="#">About us</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Blog</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Check out</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Contact</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Service</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__title--active">MY ACCOUNT</li>
+                            <li class="footer__item"><a class="footer__link" href="#">My Account</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Contact</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Shopping cart</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Shop</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__title--active">CATEGORIES</li>
+                            <li class="footer__item"><a class="footer__link" href="#">Fruits & Vegetabless</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Dairy Products</a></li>
+                            
+                            <li class="footer__item"><a class="footer__link" href="#">Package Foods</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Beverage</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Beverage</a></li>
+                        </ul>
+                        
+                        
+                    </div>
+                    <p class="footer__bottom-text mt-4">Copyright © 2021 Freshio. All Rights Reserved.</p>
+                    
+                    
+                </div>
+            </div>
+        </footer>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script src="js/main.js"></script>
+        <!-- Code injected by live-server -->
+        <script type="text/javascript">
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket' in window) {
+                (function () {
+                    function refreshCSS() {
+                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                        var head = document.getElementsByTagName("head")[0];
+                        for (var i = 0; i < sheets.length; ++i) {
+                            var elem = sheets[i];
+                            var parent = elem.parentElement || head;
+                            parent.removeChild(elem);
+                            var rel = elem.rel;
+                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                            }
+                            parent.appendChild(elem);
+                        }
+                    }
+                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                    var address = protocol + window.location.host + window.location.pathname + '/ws';
+                    var socket = new WebSocket(address);
+                    socket.onmessage = function (msg) {
+                        if (msg.data == 'reload') window.location.reload();
+                        else if (msg.data == 'refreshcss') refreshCSS();
+                    };
+                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                        console.log('Live reload enabled.');
+                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                    }
+                })();
+            }
+            else {
+                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+            }
+            // ]]>
+        </script>
+        
+        <!-- Code injected by live-server -->
+        <script type="text/javascript">
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket' in window) {
+                (function () {
+                    function refreshCSS() {
+                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                        var head = document.getElementsByTagName("head")[0];
+                        for (var i = 0; i < sheets.length; ++i) {
+                            var elem = sheets[i];
+                            var parent = elem.parentElement || head;
+                            parent.removeChild(elem);
+                            var rel = elem.rel;
+                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                            }
+                            parent.appendChild(elem);
+                        }
+                    }
+                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                    var address = protocol + window.location.host + window.location.pathname + '/ws';
+                    var socket = new WebSocket(address);
+                    socket.onmessage = function (msg) {
+                        if (msg.data == 'reload') window.location.reload();
+                        else if (msg.data == 'refreshcss') refreshCSS();
+                    };
+                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                        console.log('Live reload enabled.');
+                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                    }
+                })();
+            }
+            else {
+                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+            }
+            // ]]>
+        </script>
+        
+        <!-- Code injected by live-server -->
+        <script type="text/javascript">
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket' in window) {
+                (function () {
+                    function refreshCSS() {
+                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                        var head = document.getElementsByTagName("head")[0];
+                        for (var i = 0; i < sheets.length; ++i) {
+                            var elem = sheets[i];
+                            var parent = elem.parentElement || head;
+                            parent.removeChild(elem);
+                            var rel = elem.rel;
+                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                            }
+                            parent.appendChild(elem);
+                        }
+                    }
+                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                    var address = protocol + window.location.host + window.location.pathname + '/ws';
+                    var socket = new WebSocket(address);
+                    socket.onmessage = function (msg) {
+                        if (msg.data == 'reload') window.location.reload();
+                        else if (msg.data == 'refreshcss') refreshCSS();
+                    };
+                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                        console.log('Live reload enabled.');
+                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                    }
+                })();
+            }
+            else {
+                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+            }
+            // ]]>
+        </script>
+        
+        <!-- Code injected by live-server -->
+        <script type="text/javascript">
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket' in window) {
+                (function () {
+                    function refreshCSS() {
+                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                        var head = document.getElementsByTagName("head")[0];
+                        for (var i = 0; i < sheets.length; ++i) {
+                            var elem = sheets[i];
+                            var parent = elem.parentElement || head;
+                            parent.removeChild(elem);
+                            var rel = elem.rel;
+                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                            }
+                            parent.appendChild(elem);
+                        }
+                    }
+                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                    var address = protocol + window.location.host + window.location.pathname + '/ws';
+                    var socket = new WebSocket(address);
+                    socket.onmessage = function (msg) {
+                        if (msg.data == 'reload') window.location.reload();
+                        else if (msg.data == 'refreshcss') refreshCSS();
+                    };
+                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                        console.log('Live reload enabled.');
+                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                    }
+                })();
+            }
+            else {
+                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+            }
+            // ]]>
+        </script>
+        
+    </body>
+    </html>

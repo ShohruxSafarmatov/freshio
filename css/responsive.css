@@ -1,0 +1,206 @@
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 350px) {
+  .container {
+    max-width: 330px;
+    margin: 0 auto;
+  }
+
+  .header__forms {
+    display: none;
+  }
+
+  .header__icons-list {
+    display: none;
+  }
+
+  .header__icons-link span {
+    right: 0px;
+  }
+
+  .header-top-row {
+    display: none;
+  }
+
+  .navbar__list {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  .container-sm,
+.container {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .header__forms {
+    display: none;
+  }
+
+  .header__icons-list {
+    display: none;
+  }
+
+  .header__icons-link span {
+    right: 0px;
+  }
+
+  .header-top-row {
+    display: none;
+  }
+
+  .navbar__list {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .container-md,
+.container-sm,
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 !important;
+  }
+
+  .header__forms {
+    display: none;
+  }
+
+  .header__icons-list {
+    display: none;
+  }
+
+  .header__icons-link span {
+    right: 0px;
+  }
+
+  .header-top-row {
+    display: none;
+  }
+
+  .navbar__list {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg,
+.container-md,
+.container-sm,
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 !important;
+  }
+
+  .header__forms {
+    display: block;
+  }
+
+  .header__icons-list {
+    display: flex;
+  }
+
+  .header__icons-link span {
+    right: 0px;
+  }
+
+  .header-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .navbar__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile__menu {
+    display: none;
+  }
+
+  .none {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 !important;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .mobile__menu {
+    display: none;
+  }
+
+  .nav__bottom {
+    width: 100%;
+  }
+
+  .hook__body {
+    padding: 0 !important;
+  }
+
+  .hook__cards-won {
+    width: 100%;
+  }
+
+  .callinfo__support {
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 !important;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .mobile__menu {
+    display: none;
+  }
+
+  .header__site {
+    padding: 20px 80px !important;
+  }
+
+  .header__top-row {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px !important;
+  }
+}/*# sourceMappingURL=responsive.css.map */

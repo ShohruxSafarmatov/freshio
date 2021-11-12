@@ -1,0 +1,180 @@
+
+#about__breadcrumb {
+    background-image: url(/img/freshio_bg-breadcrumb.jpg);
+    background-color: #000000;
+    min-height: 300px;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
+}
+.about__header-site{
+    padding: 20px 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about__header{
+    background: #fff;
+}
+
+.about__nav{
+    background: #0a472e;
+    width: 100%;
+    height: 70px;
+    padding: 5px 15px;
+}
+.nav__menu-about{
+    position: relative;
+    width: 280px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #bac34e;
+    border-radius: 30px;
+    padding-left: 30px;
+    margin: 2px 0;
+}
+
+
+.header__callinfo{
+    display: flex;
+    align-items: center;
+    
+}
+.fa-headphones-alt{
+    font-size: 47px;
+    color: #bac34e;
+    float: left;
+    margin-right: 20px;
+}
+.header__callinfo-us{
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    display: block;
+}
+.header__callinfo-tel{
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #bac34e;
+    font-size: 18px;
+    line-height: 1.25em;
+}
+.about__site{
+    padding: 20px 0 !important;
+}
+.about__breadcrumb{
+    position: relative;
+}
+.breadcrumb__list{
+    display: flex;
+    align-items: center;
+    transform: translate(100px, 130px);
+    width: 160px;
+}
+.breadcrumb__item{
+    margin-right: 10px;
+}
+
+.breadcrumb__link{
+    color: rgb(85, 85, 85);
+    left: 140px;
+    top: 130px;
+    &:hover{
+        color: #bac34e;
+        
+    }
+}
+.fa-chevron-right{
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+#about__hero{
+    background: #fff;
+    padding: 40px 110px;
+}
+.about__our{
+    padding: 0 20px;
+}
+
+.about__hero-title{
+    font-weight: 400;
+    line-height: 1.1;
+    color: rgb(10, 71, 46);
+    margin-bottom: 20px;
+    display: block;
+    font-size: 28px;
+}
+
+.about__our-title{
+    font-weight: 400;
+    line-height: 1.1;
+    color: rgb(10, 71, 46);
+    display: block;
+    margin-bottom: 15px;
+    font-size: 26px;
+    
+}
+.our__title{
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.1;
+    color: rgb(10, 71, 46);
+    margin-bottom: 10px;
+    
+}
+.our__strong-text{
+    font-size: 0.875rem;
+    color: rgb(170, 170, 170);
+    line-height: 1.25em;
+    margin-bottom: 20px;
+    display: block;
+    width: 395px;
+}
+.our__text{
+    font-size: 0.875rem;
+    color: rgb(170, 170, 170);
+    font-weight: 400;
+    line-height: 1.25em;
+    margin-bottom: 15px;
+    width: 400px;
+    
+    
+}
+
+.our__list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.our__company-item{
+    font-size: 0.875rem;
+    color: rgb(170, 170, 170);
+    font-weight: 400;
+    line-height: 1.25em;
+    margin-bottom: 8px;
+}
+
+.fa-envelope-open-text{
+    font-size: 47px;
+    color: #bac34e;
+    float: left;
+    margin-right: 20px;
+}
+
+.our__call-email{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 15px;
+    background: #fff;
+    border-bottom: 1px solid #e2e2e2;
+}
+.nav__menu-span{
+    color: #fff;
+}

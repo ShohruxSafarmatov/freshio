@@ -1,0 +1,298 @@
+.hook__body{
+    padding: 95px;
+    background: #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.hook__card{
+    background-image: url('/img/freshio_h2_bn1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    height: 460px;
+    position: relative;
+    border-radius: 7px;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        margin: auto;
+        background-color: rgba(0,0,0,.1);
+        transition: all 0.4s ease-out 0s;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        z-index: 0;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        background-color: rgba(0,0,0,.1);
+        transition: all 0.4s ease-out 0s;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        z-index: 0;
+    }
+    &:hover::before {
+        width: 100%;
+        height: 100%;
+    }
+    &:hover::after {
+        width: 100%;
+        height: 100%;
+    }
+    &:hover .hook__br-bottom{
+        transform: translateY(100px) scaleX(1.9);
+    }
+}
+.hook__card-title{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    width: 110px;
+    transform: translate(90px, 90px);
+    z-index: 1;
+    &:hover{
+        color: #fff;
+    }
+    
+}
+.hook__br-bottom{
+    width: 60px;
+    height: 1px;
+    background-color: #fff;
+    transition: all 0.4s ease;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(100px);
+}
+
+.hook__cards-won{
+    background-image: url('/img/freshio_h2_bn2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 630px;
+    height: 215px;
+    border-radius: 7px;
+    position: relative;
+    margin-bottom: 30px;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        margin: auto;
+        background-color: rgba(0,0,0,.1);
+        transition: all 0.4s ease-out 0s;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        z-index: 0;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        background-color: rgba(0,0,0,.1);
+        transition: all 0.4s ease-out 0s;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        z-index: 0;
+    }
+    &:hover::before ,::after {
+        width: 100%;
+        height: 100%;
+    }
+    &:hover::after {
+        width: 100%;
+        height: 100%;
+    }
+    &:hover .hook__cards-span{
+        transform: translate(-160px, 100px) scaleX(1.9);
+    }
+}
+.hook__cards-title{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    width: 135px;
+    transform: translate(90px, 90px);
+    z-index: 1;
+}
+
+.hook__cards-two{
+    @include hook-bg-1;
+    width: 300px;
+    height: 215px;
+    position: relative;
+    
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        margin: auto;
+        background-color: rgba(0,0,0,.1);
+        transition: all 0.4s ease-out 0s;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        z-index: 0;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        background-color: rgba(0,0,0,.1);
+        transition: all 0.4s ease-out 0s;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        z-index: 0;
+    }
+    &:hover::before ,::after {
+        width: 100%;
+        height: 100%;
+    }
+    &:hover::after {
+        width: 100%;
+        height: 100%;
+    }
+    &:hover .hook__cards-span-two{
+        transform: translate(-54px, 80px) scaleX(1.8);
+    }
+}
+.hook__cards-tree{
+    @include hook-bg;
+    width: 300px;
+    height: 215px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        margin: auto;
+        background-color: rgba(0,0,0,.1);
+        transition: all 0.4s ease-out 0s;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        z-index: 0;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        background-color: rgba(0,0,0,.1);
+        transition: all 0.4s ease-out 0s;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        z-index: 0;
+    }
+    &:hover::before {
+        width: 100%;
+        height: 100%;
+    }
+    &:hover::after {
+        width: 100%;
+        height: 100%;
+    }
+    &:hover .hook__cards-span-two{
+        transform: translate(-54px, 80px) scaleX(1.9);
+    }
+}
+.hook__cards-title-two{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    width: 135px;
+    transform: translate(30px, 70px);
+    z-index: 1;
+}
+.hook__cards-span-two{
+    width: 60px;
+    height: 1px;
+    background-color: #fff;
+    transition: all 0.4s ease;
+    margin: 0 auto;
+    display: block;
+    transform: translate(-54px, 80px);
+    z-index: 1;
+}
+.hook__cards-span{
+    width: 60px;
+    height: 1px;
+    background-color: #fff;
+    transition: all 0.4s ease;
+    margin: 0 auto;
+    display: block;
+    transform: translate(-160px, 100px);
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        margin: auto;
+        background-color: rgba(0,0,0,.1);
+        transition: all 0.4s ease-out 0s;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        z-index: 0;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        background-color: rgba(0,0,0,.1);
+        transition: all 0.4s ease-out 0s;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        z-index: 0;
+    }
+    &:hover::before {
+        width: 100%;
+        height: 100%;
+    }
+    &:hover::after {
+        width: 100%;
+        height: 100%;
+    }
+    &:hover .hook__cards-span-two{
+        transform: translate(-54px, 80px) scaleX(1.9);
+    }
+}

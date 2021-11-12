@@ -1,0 +1,66 @@
+.callinfo__body{
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 70px;
+}
+
+.callinfo__support{
+  height: 160px;
+  padding: 40px 0;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  
+}
+.br{
+  border-left: 1px solid #e2e2e2;
+  padding-left: 20px;
+  display: block;
+}
+.callinfo__span{
+  font-weight: 400;
+  font-size: 13px;
+  color: #aaa ;
+  margin-bottom: 15px;
+  display: block;
+}
+.callinfo__email{
+  font-size: 14px;
+  color: #0a472e;
+  margin-bottom: 0;
+  font-weight: 400;
+  margin-bottom: 0;
+  display: block;
+  margin-top: 20px;
+  line-height: 1.2;
+  &:hover{
+    color: #0a472e;
+  }
+}
+.header__callinfo-tel{
+  &:hover{
+    color: #bac34e;
+  }
+}
+.callinfo__form{
+  position: relative;
+}
+.callinfo__arrow{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.callinfo__input{
+  height: 38px;
+  border: 1px solid #e2e2e2;
+  width: 100%;
+  border-radius: 50px;
+  padding: 0 45px 0 15px;
+  display: block;
+  margin-top: 20px;
+}
